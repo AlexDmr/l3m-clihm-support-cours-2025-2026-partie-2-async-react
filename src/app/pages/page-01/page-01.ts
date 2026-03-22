@@ -11,8 +11,9 @@ import { interval, take, timer } from 'rxjs';
 export class Page01 {
 
   constructor() {
-    const top10$ = interval(1000).pipe( take(4) )
-    top10$.subscribe( v => console.log("Bob", v) )
+    const top10$ = interval(1000).pipe(take(4));
+
+    top10$.subscribe(v => console.log("Bob", v));
     
     timer(1500).subscribe( // 1,5s plus tard...
       () => top10$.subscribe(v => console.log(" Jo", v))
