@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { ChildCompo } from './child-compo/child-compo';
 
 @Component({
@@ -9,6 +9,6 @@ import { ChildCompo } from './child-compo/child-compo';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Page03 {
-
+  protected readonly data = signal<string>("");
   
 }
