@@ -1,4 +1,9 @@
 <h2>Page 02</h2>
+
+<!-- Champs de recherche, à gérer par un formulaire réactif -->
+<input type="text" [formControl]="formQuery" />
+
+<!-- Résultat de la recherche -->
 <pre>
     queryResult : {{ queryResult() }}
 </pre>
