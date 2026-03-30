@@ -9,6 +9,6 @@ import { ChildCompo } from './child-compo/child-compo';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Page03 {
-  protected readonly data = signal<string>("");
+  protected readonly data = signal<string>("coucou");
   
 }
